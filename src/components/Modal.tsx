@@ -19,8 +19,9 @@ const Modal = ({setActive}: Props) => {
          <fieldset>
              <legend>Task Name</legend>
              <input
-                 type={'text'}
                  className={'nameField'}
+                 style={{paddingLeft: '10px'}}
+                 type={'text'}
                  value={taskName}
                  onChange={({target}) => {
                      setTaskName((target.value));

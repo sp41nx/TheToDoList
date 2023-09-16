@@ -39,6 +39,7 @@ const FieldSet = ({taskName, taskText}: Data) => {
                         height: '100px',
                         border: '0',
                         outline: 'none',
+                        resize: 'none'
                     }}
                     value={taskTextState}
                     onChange={
