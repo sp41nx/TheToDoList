@@ -9,10 +9,10 @@ import FieldSet from "./components/FieldSet";
 import Modal from "./components/Modal";
 
 function App() {
-    const store = useAppSelector(state => state.tasksSlice.tasks);
-    const dispatch = useAppDispatch();
-    const [state, setState] = useState(0);
-    const [modalActive, setModalActive] = useState(false);
+    const store = useAppSelector(state => state.tasksSlice.tasks),
+          dispatch = useAppDispatch(),
+          [state, setState] = useState(0),
+          [modalActive, setModalActive] = useState(false);
 
     return (
         <div className="App">
