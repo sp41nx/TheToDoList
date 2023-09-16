@@ -1,0 +1,46 @@
+.filter{
+    width: 95vw;
+    height: 95vh;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    background-color: rgba(44, 53, 66, .5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+fieldset{
+    width: 500px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+legend{
+    width: 150px;
+}
+
+.nameField{
+    width: 300px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 0.1em;
+}
+.taskText{
+    width: 1300px;
+    height: 700px;
+}
+.textField{
+    width: 1200px;
+    height: 650px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 0.1em;
+    opacity: 0.7;
+    resize: none;
+}
