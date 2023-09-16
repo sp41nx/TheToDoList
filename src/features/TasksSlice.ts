@@ -7,7 +7,7 @@ const tasksSlice = createSlice({
     initialState: {
         tasks: [{
         taskName: "Description",
-        taskText: "After complete fill new task fields press Enter or Esc key to cancel. For EDIT task, click on text, for SAVE just mouse remove.",
+        taskText: "After complete fill new task fields, to ADD task press Enter, or Esc key to cancel. For EDIT task, click on text, for SAVE just mouse remove.",
     },{
         taskName: "Task Name 1",
         taskText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit." +
