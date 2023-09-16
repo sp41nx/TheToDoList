@@ -14,6 +14,7 @@ function App() {
           [state, setState] = useState(0),
           [modalActive, setModalActive] = useState(false);
 
+
     return (
         <div className="App">
             {modalActive && <Modal setActive={setModalActive}/>}
