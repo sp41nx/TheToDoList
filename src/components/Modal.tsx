@@ -1,6 +1,5 @@
 import React, {Dispatch, SetStateAction, useState} from 'react';
 import './css/Modal.css';
-import {log} from "util";
 import {useAppDispatch} from "../app/hooks";
 import {addTask} from "../features/TasksSlice";
 
