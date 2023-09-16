@@ -29,7 +29,11 @@ const Modal = ({setActive}: Props) => {
                      if(e.code === 'Enter'){
                          dispatch(addTask({taskName, taskText}));
                          setActive(false);
-                     }}}
+                     }
+                     if(e.code === 'Escape'){
+                         setActive(false);
+                     }
+                 }}
                  />
          </fieldset>
             <fieldset
@@ -41,10 +45,14 @@ const Modal = ({setActive}: Props) => {
                         setTaskText(target.value);
                     }}
                     onKeyDown={(e) =>{
+                        console.log(e.code)
                         if(e.code === 'Enter'){
                             dispatch(addTask({taskName, taskText}));
                             setActive(false);
-                        }}}
+                        } if(e.code === 'Escape'){
+                            setActive(false);
+                        }
+                    }}
                     />
             </fieldset>
         </div>
