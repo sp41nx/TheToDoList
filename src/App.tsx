@@ -35,12 +35,18 @@ function App() {
                             title={"Remove task"}
                             onClick={() => {
                                 dispatch(removeTask({taskName: e.taskName}));
-                            }}>❌</Button>
+                            }}
+                        >
+                            ❌
+                        </Button>
                     </Item>)}
                 <AddTaskBtn style={{boxShadow: `${state/150}px ${state/150}px ${state/50}px black`}}
                             onClick={() =>{
                                 setModalActive(true);
-                            }}>Add Task</AddTaskBtn>
+                            }}
+                >
+                    Add Task
+                </AddTaskBtn>
             </List>
         </div>
     );
